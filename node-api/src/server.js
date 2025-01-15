@@ -1,6 +1,7 @@
 const express = require('express');
 const errorMiddleware = require('./middlewares/errorMiddleware');
 const configuration = require('./configurations/configuration');
+const cors = require('cors');
 const connectDB = require('./configurations/mongo');
 const routes = require('./routes');
 
@@ -11,6 +12,7 @@ connectDB();
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 routes(app);
 
