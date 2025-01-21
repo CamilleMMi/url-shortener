@@ -8,7 +8,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<ShortenUrlForm />} />
-        <Route path="/redirect/:slug" element={<RedirectFromSlug />} />
+        <Route path="/:slug" element={<RedirectFromSlug />} />
       </Routes>
     </Router>
   );
