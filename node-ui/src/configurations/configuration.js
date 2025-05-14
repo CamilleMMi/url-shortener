@@ -1,5 +1,7 @@
 import { config } from 'dotenv';
 
+// File is useless as of today, i hardcoded the api URL inside the URLService
+
 config({ path: './src/env/.env' });
 
 export default {
