@@ -23,8 +23,8 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: cd front
-        run: cd node-ui/
+      - name: Change directory to node-ui
+        working-directory: node-ui
 
       - name: npm install, build, and test
         run: |
