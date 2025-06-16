@@ -24,7 +24,7 @@ jobs:
           node-version: '22.x'
 
       - name: cd front
-        run: cd ../node-ui/
+        run: cd node-ui/
 
       - name: npm install, build, and test
         run: |
